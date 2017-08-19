@@ -590,6 +590,11 @@ body
     border: none;
     background-color: #48c8fe;
 }
+.button--blue:hover
+{
+    color: #fff;
+    background-color: #33afe3;
+}
 
 .button--white-border
 {
@@ -612,7 +617,8 @@ body
 }
 .button--green:hover
 {
-    background-color: #5c7c2f;
+    color: #fff;
+    background-color: #96d044;
 }
 
 .fw
@@ -898,8 +904,8 @@ pre
 }
 .page__links:hover
 {
-    color: #5c7c2f;
-    border-color: #5c7c2f;
+    color: #96d044;
+    border-color: #96d044;
 }
 @media (min-width: 768px)
 {

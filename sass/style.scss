@@ -1,7 +1,8 @@
 $c_blue: #48c8fe;
+$c_dblue: #33afe3;
 $c_white: #fff;
 $c_lgreen: #a8e454;
-$c_dgreen: #5c7c2f;
+$c_dgreen: #96d044;
 $c_gray: #393939;
 
 @import 'global/fonts.scss';
@@ -20,6 +21,11 @@ $c_gray: #393939;
     color: $c_white;
     border: none;
     background-color: $c_blue;
+    &:hover
+    {
+        color: $c_white;
+        background-color: $c_dblue;
+    }
 }
 .button--white-border
 {
@@ -40,6 +46,7 @@ $c_gray: #393939;
     background-color: $c_lgreen;
     &:hover
     {
+        color: $c_white;
         background-color: $c_dgreen;
     }
 }
