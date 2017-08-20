@@ -7,6 +7,7 @@
     &__new-style
     {
         padding: 24px 20px 30px;
+
         & > .image
         {
             overflow: hidden;
@@ -37,11 +38,21 @@
 }
 .field__new-style
 {
+    &:not(:last-child)
+    {
+        margin-bottom: 0;
+    }
+
     & .control .button .icon:first-child:not(:last-child)
     {
         margin-right: 0;
         margin-left: 0;
     }
+}
+.field__new-style.nav-item
+{
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .button__control
@@ -180,7 +191,19 @@
     flex-wrap: wrap;
     &__image
     {
+        display: flex;
+
         width: 30%;
+
+        text-align: center;
+
+        align-items: center;
+        justify-content: center;
+        & svg
+        {
+            min-width: 65px;
+            height: auto;
+        }
     }
     &__choose
     {
@@ -207,9 +230,17 @@
         box-sizing: content-box;
         width: 11px;
         padding: 5px;
+        &:hover
+        {
+            color: $c_dblue;
+        }
         &--plus
         {
             color: $c_lgreen;
+            &:hover
+            {
+                color: $c_dgreen;
+            }
         }
     }
     &__count-block
@@ -254,9 +285,64 @@
     }
 }
 
+.earn__image
+{
+    margin-top: -5px;
+    margin-bottom: 10px;
+    & img
+    {
+        width: 100px;
+        height: auto;
+    }
+}
+.media__new-style
+{
+    display: flex;
+
+    text-decoration: none;
+
+    align-items: center;
+    &:hover
+    {
+        color: $c_blue;
+    }
+    & .image
+    {
+        overflow: hidden;
+
+        width: 56px;
+        height: 56px;
+
+        border: 3px solid $c_blue;
+        border-radius: 50%;
+    }
+    & strong
+    {
+        font-size: 14px;
+    }
+    & p
+    {
+        font-size: 12px;
+    }
+}
+.message-body .media__new-style:not(.button)
+{
+    text-decoration: none;
+}
+.message-body .media__new-style:not(.button)
+{
+    &:hover
+    {
+        color: $c_blue;
+    }
+}
 .message-body .limit__button:not(.button)
 {
     text-decoration: none;
+    &:hover
+    {
+        color: $c_blue;
+    }
 }
 .message-body .limit__button--plus:not(.button)
 {
@@ -284,6 +370,10 @@
             margin-left: calc(-.375em - 1px);
         }
     }
+    .field__new-style.nav-item
+    {
+        padding: .35rem .75rem;
+    }
 }
 @media (max-width: 350px)
 {
@@ -298,5 +388,14 @@
     .button__connect
     {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1260px)
+{
+    .container
+    {
+        width: 1190px;
+        max-width: 1190px;
     }
 }

@@ -1,14 +1,10 @@
-$c_blue: #48c8fe;
-$c_dblue: #33afe3;
-$c_white: #fff;
-$c_lgreen: #a8e454;
-$c_dgreen: #96d044;
-$c_gray: #393939;
-
+@import 'variables.scss';
 @import 'global/fonts.scss';
 @import 'global/global.scss';
+@import 'extensions/bulma.scss';
 @import 'extensions/timeline.scss';
-@import 'user.scss';
+@import 'blocks/supporter.scss';
+@import 'blocks/index.scss';
 @import 'blocks/timeline.scss';
 
 
@@ -64,7 +60,7 @@ $c_gray: #393939;
 pre
 {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     padding: 1em 1.25em;
 
     white-space: pre-wrap;
@@ -73,353 +69,29 @@ pre
     border: 1px solid #dbdbdb;
     border-radius: 3px;
 }
-
-.hero.page-promo
+a
 {
-    font-size: 40px;
-
-    height: 692px;
-
-    color: $c_white;
-    background-color: $c_blue;
-    background-image: url('./../img/bg-book.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    &--boy
-    {
-        height: auto;
-
-        background-image: url('./../img/bg-boy.jpg');
-    }
-    &--girl
-    {
-        height: auto;
-
-        background-image: url('./../img/bg-girl.jpg');
-    }
-}
-
-
-.button__join
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-
-    display: inline-block;
-
-    min-width: 128px;
-    height: auto;
-    padding: 10px;
-
-    color: $c_white;
-    border: 0;
-    background-color: $c_lgreen;
-}
-
-.icon--on-white
-{
-    margin-bottom: 40px;
-
-    color: $c_blue;
-    & i
-    {
-        font-size: 42px;
-    }
-}
-.icon--on-blue
-{
-    margin-bottom: 40px;
-
-    color: $c_white;
-    & i
-    {
-        font-size: 42px;
-    }
-}
-.main-nav
-{
-    box-sizing: border-box;
-    min-height: 78px;
-    padding: 20px 15px;
-
-    background-color: rgb(72, 200, 254);
-    box-shadow: 0 0 0 0 transparent;
-}
-.hero-head .main-nav
-{
-    box-sizing: border-box;
-    height: 78px;
-    padding: 20px 15px;
-
-    background-color: rgba(72, 200, 254, .8);
-    box-shadow: 0 0 0 0 transparent;
-}
-
-.main-nav a.nav-item:not(.button)
-{
-    display: flex;
-
-    color: $c_white;
-}
-.nav-menu.nav-right .nav-item__btn
-{
-    margin-left: 20px;
-}
-.nav-menu.nav-right
-{
-    display: flex;
-
-    align-items: center;
-}
-.nav-item
-{
-    padding: .35rem .75rem;
-}
-.nav > .container
-{
-    min-height: auto;
-}
-.title
-{
-    &__main-promo
-    {
-        font-family: 'Open Sans Extra Bold';
-        font-size: 52px;
-        font-weight: 700;
-
-        max-width: 480px;
-        margin: 0 auto;
-
-        color: $c_white;
-    }
-    &__promo
-    {
-        font-family: 'Open Sans Extra Bold';
-        font-size: 52px;
-        line-height: 54px;
-
-        color: $c_white;
-    }
-    &--dark
-    {
-        font-size: 40px;
-
-        margin-bottom: 65px;
-
-        color: $c_gray;
-        &.title:not(:last-child)
-        {
-            margin-bottom: 1.5em;
-        }
-    }
-    &--light
-    {
-        font-size: 40px;
-
-        margin-bottom: 65px;
-
-        color: $c_white;
-        &.title:not(:last-child)
-        {
-            margin-bottom: 1.5em;
-        }
-    }
-}
-.subtitle
-{
-    &__promo
-    {
-        font-family: 'Open Sans Bold';
-        font-size: 40px;
-        font-style: italic;
-        line-height: 1;
-
-        color: $c_white;
-    }
-    &__quote
-    {
-        font-family: 'Open Sans Bold';
-        font-size: 40px;
-        font-style: italic;
-
-        position: relative;
-
-        display: inline-block;
-
-        box-sizing: border-box;
-        max-width: 616px;
-        padding: 0 30px;
-
-        color: $c_blue;
-        &::before
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            display: block;
-
-            content: '"';
-        }
-        &::after
-        {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
-            display: block;
-
-            content: '"';
-        }
-    }
-}
-.about-project
-{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    &--white
-    {
-        color: $c_gray;
-        background-color: $c_white;
-    }
-    &--blue
-    {
-        color: $c_white;
-        background-color: $c_blue;
-    }
-    &__item
-    {
-        padding: 0 5%;
-    }
-    &__subtitle
-    {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 24px;
-
-        margin-bottom: 20px;
-    }
-}
-
-
-
-
-
-.page-footer
-{
-    padding: 3rem 1.5rem 3rem;
-
-    background-color: #f8f8f8;
-}
-.page__links
-{
-    line-height: 22px;
-
-    display: inline-block;
-
     color: $c_lgreen;
-    border-bottom: 1px solid $c_lgreen;
     &:hover
     {
         color: $c_dgreen;
-        border-color: $c_dgreen;
     }
 }
 
+.subtitle--mb:not(:last-child)
+{
+    margin-bottom: .5rem;
+}
 
 @media (max-width: 768px)
 {
-    .title
-    {
-        &__main-promo
-        {
-            font-size: 34px;
-            &--left
-            {
-                text-align: left;
-            }
-        }
-        &--dark
-        {
-            font-size: 28px;
-        }
-        &--light
-        {
-            font-size: 28px;
-        }
-    }
-    .nav-menu.nav-left
-    {
-        display: flex;
-
-        align-items: center;
-    }
-
-    .button__join
-    {
-        padding: 5px;
-    }
-
-    .hero.page-promo
-    {
-        height: auto;
-
-        background-position: 80% center;
-        &--boy
-        {
-            background-position: center center;
-        }
-        &--girl
-        {
-            background-position: center center;
-        }
-    }
-
-    &__item
-    {
-        padding: 0;
-    }
-    .nav-menu.nav-right
-    {
-        position: static;
-
-        display: flex;
-
-        background-color: transparent;
-        box-shadow: none;
-
-        align-items: center;
-    }
-    .nav-menu.nav-right .nav-item
-    {
-        border-top: 0;
-    }
-    .nav-menu.nav-right .nav-item__btn
-    {
-        margin-left: 0;
-
-        border: 1px solid;
-    }
-
-    .button__join
-    {
-        font-size: 22px;
-
-        min-width: 106px;
-    }
-
-    .about-project
-    {
-        padding-right: 0;
-        padding-left: 0;
-    }
     pre
     {
         margin-right: -24px;
         margin-left: -24px;
 
+        border-right: 0;
+        border-left: 0;
         border-radius: 0;
     }
 }
