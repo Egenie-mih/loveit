@@ -86,16 +86,6 @@
 
     text-align: center;
 
-    &--small
-    {
-        font-size: 14px;
-        font-weight: 400;
-        & .icon .fa
-        {
-            font-size: 14px;
-        }
-    }
-
     & .icon
     {
         width: auto;
@@ -117,6 +107,16 @@
         &:hover
         {
             color: #5b5b5b;
+        }
+    }
+
+    &--small
+    {
+        font-size: 14px;
+        font-weight: 400;
+        & .icon .fa
+        {
+            font-size: 14px;
         }
     }
 }
