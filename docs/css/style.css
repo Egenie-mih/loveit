@@ -8853,6 +8853,15 @@ label.panel-block:hover
 
     text-align: center;
 }
+.message-text--small
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.message-text--small .icon .fa
+{
+    font-size: 14px;
+}
 .message-text .icon
 {
     width: auto;

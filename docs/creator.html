@@ -65,6 +65,9 @@
                             <div class="message-text">Cathleen Cienna
                                 <a href="#" class="icon"><i class="fa fa-pencil"></i></a>
                             </div>
+                            <div class="message-text message-text--small">Illustrator, comics artist
+                                <a href="#" class="icon"><i class="fa fa-pencil"></i></a>
+                            </div>
                         </div>
 
                     </div>
@@ -89,36 +92,36 @@
 
                         <h3 class="title is-6">Embed following JS script on your page</h3>
 
-<pre>
-&lt;!-- JS LoveIt Script --&gt;
-&lt;script&gt;(function(d, i, l) {
-  var f = d.createElement('iframe');
-  f.src = "//loveit.tips/api/v1/thank/http/" +
-    l.host +
-    "/" + l.pathname;
-  f.title = "LoveIt";
-  f.height = 48;
-  f.width = 110;
-  f.style.borderWidth = 0;
+    <pre>
+    &lt;!-- JS LoveIt Script --&gt;
+    &lt;script&gt;(function(d, i, l) {
+      var f = d.createElement('iframe');
+      f.src = "//loveit.tips/api/v1/thank/http/" +
+        l.host +
+        "/" + l.pathname;
+      f.title = "LoveIt";
+      f.height = 48;
+      f.width = 110;
+      f.style.borderWidth = 0;
 
-  function initButton() {
-    var s = d.getElementById(i);
-    s.appendChild(f);
-  };
-  initButton = initButton.bind(this);
+      function initButton() {
+        var s = d.getElementById(i);
+        s.appendChild(f);
+      };
+      initButton = initButton.bind(this);
 
-  if (d.readyState !== 'loading') {
-    initButton();
-  } else {
-    d.addEventListener('DOMContentLoaded', initButton)
-  }
-})(document, 'love-it', window.location)
-&lt;/script&gt;
-</pre>
+      if (d.readyState !== 'loading') {
+        initButton();
+      } else {
+        d.addEventListener('DOMContentLoaded', initButton)
+      }
+    })(document, 'love-it', window.location)
+    &lt;/script&gt;
+    </pre>
                             <h3 class="title is-6">Place button tag where you want it</h3>
-<pre>
-&lt;div id="love-it"&gt;&lt;/div&gt;
-</pre>
+    <pre>
+    &lt;div id="love-it"&gt;&lt;/div&gt;
+    </pre>
                             <h3 class="title is-6">Example</h3>
                             <div class="columns">
                                 <div class="column is-5">
