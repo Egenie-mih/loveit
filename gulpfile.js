@@ -28,10 +28,10 @@ gulp.task("style", function() {
             })
         ]))
         .pipe(csscomb())
-        .pipe(gulp.dest("docs/css"))
+        .pipe(gulp.dest("./css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("docs/css"))
+        .pipe(gulp.dest("./css"))
         .pipe(server.stream());
 });
 
