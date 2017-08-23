@@ -8734,7 +8734,7 @@ label.panel-block:hover
 }
 .about-project__subtitle
 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     line-height: 24px;
 
@@ -8742,7 +8742,7 @@ label.panel-block:hover
 }
 .about-project p
 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .page-footer
@@ -8853,15 +8853,6 @@ label.panel-block:hover
 
     text-align: center;
 }
-.message-text--small
-{
-    font-size: 14px;
-    font-weight: 400;
-}
-.message-text--small .icon .fa
-{
-    font-size: 14px;
-}
 .message-text .icon
 {
     width: auto;
@@ -8884,6 +8875,15 @@ label.panel-block:hover
 .message-text .icon .fa:hover
 {
     color: #5b5b5b;
+}
+.message-text--small
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.message-text--small .icon .fa
+{
+    font-size: 14px;
 }
 
 .support__block
